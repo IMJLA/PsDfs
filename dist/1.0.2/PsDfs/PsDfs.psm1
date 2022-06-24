@@ -1,6 +1,6 @@
 
 Function Get-DfsNetInfo {
-    
+
     [CmdletBinding()]
     Param (
 
@@ -8,12 +8,12 @@ Function Get-DfsNetInfo {
 
         [Parameter(Mandatory, ValueFromPipeline)]
         [ValidateScript({
-            Test-Path -LiteralPath $_ -PathType Container
-        })]
+                Test-Path -LiteralPath $_ -PathType Container
+            })]
         [String[]]$FolderPath
 
     )
-    
+
     Begin {
 
         $CSharpCode = @'
@@ -23,7 +23,7 @@ Function Get-DfsNetInfo {
             using System.Management.Automation;
             using System.Runtime.InteropServices;
 
-            
+
     public class NetApi32Dll {
 
         [DllImport("netapi32.dll", SetLastError = true)] private static extern int NetApiBufferFree
@@ -99,7 +99,7 @@ Function Get-DfsNetInfo {
             public UInt16 TargetPriorityRank;
             public UInt16 Reserved;
         }
-        
+
         public enum DFS_TARGET_PRIORITY_CLASS {
             DfsInvalidPriorityClass = -1,
             DfsSiteCostNormalPriorityClass = 0,
@@ -122,7 +122,7 @@ Function Get-DfsNetInfo {
 
         public static List<PSObject> NetDfsEnum(string DfsName)
         {
-                
+
             IntPtr buffer = new IntPtr();
             int EntriesRead = 0;
             int ResumeHere = 0;
@@ -137,7 +137,7 @@ Function Get-DfsNetInfo {
                 if (result != NERR_Success)
                 {
                     string errorMessage = new Win32Exception(Marshal.GetLastWin32Error()).Message;
-                    
+
                     throw (new SystemException("NetDfsEnum error. System Error Code: " + result + " - " + errorMessage));
                 }
                 else
@@ -179,7 +179,7 @@ Function Get-DfsNetInfo {
 
         public static List<PSObject> NetDfsEnum6(string DfsName)
         {
-            
+
             IntPtr buffer = new IntPtr();
             int EntriesRead = 0;
             int ResumeHere = 0;
@@ -209,7 +209,7 @@ Function Get-DfsNetInfo {
                     {
 
                         IntPtr dfsPtr = new IntPtr(dfsStart + n * dfsSize);
-                            
+
                         object dfsObject = Marshal.PtrToStructure(dfsPtr,dfsType);
                         DFS_INFO_6 dfsInfo = (DFS_INFO_6)dfsObject;
 
@@ -220,19 +220,19 @@ Function Get-DfsNetInfo {
                         Int64 storagesStart = dfsInfo.Storages.ToInt64();
                         Type storageType = typeof(DFS_STORAGE_INFO_1);
                         Int64 storageSize = Marshal.SizeOf(storageType);
-                        
+
                         for (int i = 0; i < dfsInfo.NumberOfStorages; i++)
                         {
-                            
+
                             //Attempted some different properties in case they were mis-mapped the same way that NumberofStorages was
                             //Int64 StartPoint = Convert.ToInt64(dfsInfo.MetadataSize); //System.AccessViolationException
                             //Int64 StartPoint = Convert.ToInt64(dfsInfo.PropertyFlags); //System.AccessViolationException
                             //Int64 StartPoint = Convert.ToInt64(dfsInfo.Timeout); //System.AccessViolationException
                             //IntPtr storagePtr = new IntPtr(StartPoint);
 
-                            IntPtr storagePtr = new IntPtr(storagesStart + i * storageSize);       
+                            IntPtr storagePtr = new IntPtr(storagesStart + i * storageSize);
                             object storageObject = Marshal.PtrToStructure(storagePtr, storageType); //System.NullReferenceException
-                            DFS_STORAGE_INFO_1 storageInfo = (DFS_STORAGE_INFO_1)storageObject;                                    
+                            DFS_STORAGE_INFO_1 storageInfo = (DFS_STORAGE_INFO_1)storageObject;
                             PSObject psObject = new PSObject();
                             psObject.Properties.Add(new PSNoteProperty("FullOriginalQueryPath", DfsName));
                             psObject.Properties.Add(new PSNoteProperty("DfsEntryPath", dfsInfo.EntryPath));
@@ -338,13 +338,13 @@ Function Get-DfsNetInfo {
     }
 
 '@
-    
+
         if (-not ('NetApi32Dll' -as [Type])) {
             Add-Type -TypeDefinition $CSharpCode *> $null
         }
 
     }
-    
+
     Process {
 
         foreach ($ThisFolderPath in $FolderPath) {
@@ -363,7 +363,7 @@ Function Get-DfsNetInfo {
 
             #[NetApi32Dll]::NetDfsEnum($ThisFolderPath)
 
-            [NetApi32Dll]::NetDfsGetInfo($ThisFolderPath) 
+            [NetApi32Dll]::NetDfsGetInfo($ThisFolderPath)
 
         }
 
@@ -475,5 +475,6 @@ $PublicScriptFiles = $ScriptFiles | Where-Object -FilterScript {
 }
 $publicFunctions = $PublicScriptFiles.BaseName
 Export-ModuleMember -Function @('Get-DfsNetInfo','Get-FileShareInfo','Get-NetDfsEnum')
+
 
 
