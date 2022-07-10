@@ -1,6 +1,6 @@
 
 Function Get-DfsNetInfo {
-
+    # Wrapper for the NetDfsGetInfo([string]) method in the lmdfs.h header in NetApi32.dll for Distributed File Systems
     [CmdletBinding()]
     Param (
 
@@ -475,6 +475,7 @@ $PublicScriptFiles = $ScriptFiles | Where-Object -FilterScript {
 }
 $publicFunctions = $PublicScriptFiles.BaseName
 Export-ModuleMember -Function @('Get-DfsNetInfo','Get-FileShareInfo','Get-NetDfsEnum')
+
 
 
 
