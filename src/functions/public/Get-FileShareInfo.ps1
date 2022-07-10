@@ -1,5 +1,5 @@
 function Get-FileShareInfo {
-    
+    # Get the corresponding local file path for DFS folder targets (which are UNC paths)
     param (
 
         [Parameter(ValueFromPipeline)]
@@ -26,16 +26,16 @@ function Get-FileShareInfo {
 
             $ShareName = ($DFS.ShareName -split '\\')[0]
             $ShareLocalPath = Get-CimInstance @CimParams |
-                Where-Object Name -EQ $ShareName
-            $LocalPath = $DFS.ShareName -replace [regex]::Escape("$ShareName\"),$ShareLocalPath.Path
-    
+            Where-Object Name -EQ $ShareName
+            $LocalPath = $DFS.ShareName -replace [regex]::Escape("$ShareName\"), $ShareLocalPath.Path
+
             $DFS | Add-Member -PassThru -NotePropertyMembers @{
-                #DfsPath = $DFS.DfsPath 
+                #DfsPath = $DFS.DfsPath
                 FolderTarget = "$($DFS.ServerName)\$($DFS.ShareName)\$($DFS.DfsPath -replace [regex]::Escape($DFS.ShareName))"
                 #DfsState = $DFS.State
                 #ServerName = $DFS.ServerName
                 #ShareName = $DFS.ShareName
-                LocalPath = $LocalPath
+                LocalPath    = $LocalPath
             }
 
         }

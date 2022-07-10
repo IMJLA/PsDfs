@@ -1,5 +1,5 @@
 Function Get-NetDfsEnum {
-
+    # Wrapper for the NetDfsEnum([string]) method in the lmdfs.h header in NetApi32.dll for Distributed File Systems
     [CmdletBinding()]
     Param (
 

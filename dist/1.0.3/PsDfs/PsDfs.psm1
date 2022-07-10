@@ -371,7 +371,7 @@ Function Get-DfsNetInfo {
 
 }
 function Get-FileShareInfo {
-    
+    # Get the corresponding local file path for DFS folder targets (which are UNC paths)
     param (
 
         [Parameter(ValueFromPipeline)]
@@ -398,16 +398,16 @@ function Get-FileShareInfo {
 
             $ShareName = ($DFS.ShareName -split '\\')[0]
             $ShareLocalPath = Get-CimInstance @CimParams |
-                Where-Object Name -EQ $ShareName
-            $LocalPath = $DFS.ShareName -replace [regex]::Escape("$ShareName\"),$ShareLocalPath.Path
-    
+            Where-Object Name -EQ $ShareName
+            $LocalPath = $DFS.ShareName -replace [regex]::Escape("$ShareName\"), $ShareLocalPath.Path
+
             $DFS | Add-Member -PassThru -NotePropertyMembers @{
-                #DfsPath = $DFS.DfsPath 
+                #DfsPath = $DFS.DfsPath
                 FolderTarget = "$($DFS.ServerName)\$($DFS.ShareName)\$($DFS.DfsPath -replace [regex]::Escape($DFS.ShareName))"
                 #DfsState = $DFS.State
                 #ServerName = $DFS.ServerName
                 #ShareName = $DFS.ShareName
-                LocalPath = $LocalPath
+                LocalPath    = $LocalPath
             }
 
         }
@@ -416,7 +416,7 @@ function Get-FileShareInfo {
 
 }
 Function Get-NetDfsEnum {
-
+    # Wrapper for the NetDfsEnum([string]) method in the lmdfs.h header in NetApi32.dll for Distributed File Systems
     [CmdletBinding()]
     Param (
 
@@ -475,6 +475,7 @@ $PublicScriptFiles = $ScriptFiles | Where-Object -FilterScript {
 }
 $publicFunctions = $PublicScriptFiles.BaseName
 Export-ModuleMember -Function @('Get-DfsNetInfo','Get-FileShareInfo','Get-NetDfsEnum')
+
 
 
 
