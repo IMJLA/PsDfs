@@ -9,10 +9,10 @@
 @{
 
     # Script module or binary module file associated with this manifest.
-    RootModule        = 'PsDfs.psm1'
+    RootModule        = 'PsDfs'
 
     # Version number of this module.
-    ModuleVersion     = '1.0.3'
+    ModuleVersion     = '1.0.4'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -24,10 +24,10 @@
     Author            = 'Jeremy La Camera'
 
     # Company or vendor of this module
-    CompanyName       = 'Unknown'
+    CompanyName       = 'Jeremy La Camera'
 
     # Copyright statement for this module
-    Copyright         = '(c) Jeremy La Camera. All rights reserved.'
+    Copyright         = '2022 Jeremy La Camera'
 
     # Description of the functionality provided by this module
     Description       = 'Wrapper for the lmdfs.h header in NetApi32.dll for Distributed File Systems'
