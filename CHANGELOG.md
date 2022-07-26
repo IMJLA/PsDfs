@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.12] - 2022-07-26 - Removed pause from CSharp psake task
+
+## [1.0.11] - 2022-07-26 - bug fix in CSharp psake task
+
+## [1.0.10] - 2022-07-26 - Implemented CSharp psake task
+
 ## [1.0.9] - 2022-07-26 - test
 
 ## [1.0.8] - 2022-07-26 - Bug fix where c sharp was not copied into final module

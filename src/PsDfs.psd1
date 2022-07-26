@@ -12,7 +12,7 @@
     RootModule        = 'PsDfs'
 
     # Version number of this module.
-    ModuleVersion     = '1.0.9'
+    ModuleVersion     = '1.0.12'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()

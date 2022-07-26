@@ -262,16 +262,7 @@ task BuildModule -depends CleanOutputDir {
     Build-PSBuildModule @buildParams
 } -description 'Build a PowerShell script module based on the source directory'
 
-$genMarkdownPreReqs = {
-    $result = $true
-    if (-not (Get-Module PlatyPS -ListAvailable)) {
-        Write-Warning "PlatyPS module is not installed. Skipping [$($psake.context.currentTaskName)] task."
-        $result = $false
-    }
-    $result
-}
-
-task CSharp {
+task CSharp -depends BuildModule {
     $OutputModule = Get-ChildItem -LiteralPath $env:BHBuildOutput -Include *.psm1
 
     $ThisModuleDefinition = $OutputModule |
@@ -281,16 +272,13 @@ task CSharp {
     $CSharpContent = [System.Collections.Generic.List[string]]::New()
 
     # Add the code to load any C# classes from files in the module
-    Write-Host "Get-ChildItem -LiteralPath $($OutputModule.ModuleBase) -Include *.cs -Recurse" -ForegroundColor Red
     $CSharpFiles = Get-ChildItem -LiteralPath .\src -Include *.cs -Recurse
     ForEach ($ThisFile in $CSharpFiles) {
-        Write-Host $ThisFile.FullName -ForegroundColor Red
         $null = $CSharpContent.Add('Add-Type -ErrorAction Stop -TypeDefinition @"')
         $null = $CSharpContent.Add(($ThisFile | Get-Content -Raw))
-        $null = $CSharpContent.Add('"@"')
+        $null = $CSharpContent.Add('"@')
 
     }
-    pause
     $Result = $CSharpContent -join "`r`n`r`n"
     # Remove the 5 lines in the module source code that load C# classes from their files (we have already added the necessary code up above)
     $ThisModuleDefinition = $ThisModuleDefinition -replace '\# Placeholder for C Sharp class definitions', $Result
@@ -298,7 +286,16 @@ task CSharp {
     $ThisModuleDefinition | Out-File -LiteralPath $OutputModule.FullName -Force
 }
 
-task DeleteMarkdownHelp -depends BuildModule -precondition $genMarkdownPreReqs {
+$genMarkdownPreReqs = {
+    $result = $true
+    if (-not (Get-Module PlatyPS -ListAvailable)) {
+        Write-Warning "PlatyPS module is not installed. Skipping [$($psake.context.currentTaskName)] task."
+        $result = $false
+    }
+    $result
+}
+
+task DeleteMarkdownHelp -depends CSharp -precondition $genMarkdownPreReqs {
     $MarkdownDir = [IO.Path]::Combine($DocsRootDir, $HelpDefaultLocale)
     "`tDeleting folder: '$MarkdownDir'"
     Get-ChildItem -Path $MarkdownDir -Recurse | Remove-Item
