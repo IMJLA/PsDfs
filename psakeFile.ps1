@@ -271,6 +271,30 @@ $genMarkdownPreReqs = {
     $result
 }
 
+task CSharp {
+    $OutputModule = Get-ChildItem -LiteralPath $env:BHBuildOutput -Include *.psm1
+
+    $ThisModuleDefinition = $OutputModule |
+    Get-Content -Raw
+
+    # Prep an empty collection of strings to store our new portable script
+    $CSharpContent = [System.Collections.Generic.List[string]]::New()
+
+    # Add the code to load any C# classes from files in the module
+    $CSharpFiles = Get-ChildItem -LiteralPath .\src -Include *.cs -Recurse
+    ForEach ($ThisFile in $CSharpFiles) {
+        $null = $CSharpContent.Add('Add-Type -ErrorAction Stop -TypeDefinition @"')
+        $null = $CSharpContent.Add(($ThisFile | Get-Content -Raw))
+        $null = $CSharpContent.Add('"@"')
+
+    }
+    $Result = $CSharpContent -join "`r`n`r`n"
+    # Remove the 5 lines in the module source code that load C# classes from their files (we have already added the necessary code up above)
+    $ThisModuleDefinition = $ThisModuleDefinition -replace '\# Placeholder for C Sharp class definitions', $Result
+
+    $ThisModuleDefinition | Out-File -LiteralPath $OutputModule.FullName -Force
+}
+
 task DeleteMarkdownHelp -depends BuildModule -precondition $genMarkdownPreReqs {
     $MarkdownDir = [IO.Path]::Combine($DocsRootDir, $HelpDefaultLocale)
     "`tDeleting folder: '$MarkdownDir'"
