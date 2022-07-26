@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.14] - 2022-07-26 - File locked, trying build again
+
+## [1.0.13] - 2022-07-26 - Removed c# code from functions, moved to Classes folder.  TODO: Compare .old version to .cs, merge changes as needed
+
 ## [1.0.12] - 2022-07-26 - Removed pause from CSharp psake task
 
 ## [1.0.11] - 2022-07-26 - bug fix in CSharp psake task
