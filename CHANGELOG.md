@@ -5,6 +5,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.9] - 2022-07-26 - test
+
 ## [1.0.8] - 2022-07-26 - Bug fix where c sharp was not copied into final module
 
 ## [1.0.7] - 2022-07-25 - Re-enabled c sharp class imports in source psm1 file
