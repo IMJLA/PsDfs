@@ -23,15 +23,11 @@ Function Get-NetDfsEnum {
             $DfsLink = ""
             $Remainder = ""
 
-            <#
-            # Use the NetDfsGetInfo method instead as it does not filter out disabled folder targets
-            # But it does not work
-            #>
-            #[NetApi32Dll]::NetDfsGetClientInfo($ThisFolderPath)
+            # Can't use [NetApi32Dll]::NetDfsGetInfo($ThisFolderPath) because it doesn't work if the provided path is a subfolder of a DFS folder
+            # Can't use [NetApi32Dll]::NetDfsGetClientInfo($ThisFolderPath) because it does not return disabled folder targets
+            # Instead need to use [NetApi32Dll]::NetDfsEnum($ThisFolderPath) then Where-Object to filter results
 
             [NetApi32Dll]::NetDfsEnum($ThisFolderPath)
-
-            #[NetApi32Dll]::NetDfsGetInfo($ThisFolderPath)
 
         }
 
