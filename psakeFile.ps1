@@ -276,7 +276,8 @@ task CSharp -depends BuildModule {
 
 
     ForEach ($ThisFile in $CSharpFiles) {
-        $null = $CSharpContent.Add("if ([type]'$($ThisFile.Name.Split('.')[0])') {")
+        #$null = $CSharpContent.Add("if ([type]'$($ThisFile.Name.Split('.')[0])') {") # worked in testing but in prod it could not convert a string to a type
+        $null = $CSharpContent.Add("if (([System.Management.Automation.PSTypeName]'$($ThisFile.Name.Split('.')[0])').Type) {") # worked in testing but in prod it could not convert a string to a type
         $null = $CSharpContent.Add("Write-Verbose 'TYPE_ALREADY_EXISTS $($ThisFile.Name.Split('.')[0]).  It is possible that the most recent version is not loaded.  Restart PowerShell to be certain.'")
         $null = $CSharpContent.Add('} else {')
         $null = $CSharpContent.Add('Add-Type -ErrorAction Stop -TypeDefinition @"')
