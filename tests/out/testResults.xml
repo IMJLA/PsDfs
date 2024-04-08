@@ -1,64 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="59" errors="0" failures="8" not-run="0" inconclusive="0" ignored="0" skipped="2" invalid="0" date="2024-01-15" time="08:53:26">
-  <environment user="Owner" platform="Microsoft Windows 10 Pro|C:\WINDOWS|\Device\Harddisk0\Partition2" nunit-version="2.5.8.0" os-version="10.0.19044" clr-version="Unknown" user-domain="JLA-LoftHTPC" cwd="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests" machine-name="JLA-LOFTHTPC" />
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="59" errors="0" failures="8" not-run="0" inconclusive="0" ignored="0" skipped="2" invalid="0" date="2024-04-07" time="17:14:58">
+  <environment clr-version="Unknown" machine-name="JLA-LOFTHTPC" nunit-version="2.5.8.0" cwd="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests" user="Owner" os-version="10.0.19044" user-domain="JLA-LoftHTPC" platform="Microsoft Windows 10 Pro|C:\WINDOWS|\Device\Harddisk0\Partition2" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="TestFixture" name="Pester" executed="True" result="Failure" success="False" time="5.5541" asserts="0" description="Pester">
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Failure" success="False" time="3.4726" asserts="0" description="Pester">
     <results>
-      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Function.tests.ps1" executed="True" result="Success" success="True" time="1.1042" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Function.tests.ps1">
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Function.tests.ps1" executed="True" result="Success" success="True" time="1.1579" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Function.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="function 'Get-DfsNetInfo.ps1'" executed="True" result="Success" success="True" time="0.3683" asserts="0" description="function 'Get-DfsNetInfo.ps1'">
+          <test-suite type="TestFixture" name="function 'Get-DfsNetInfo.ps1'" executed="True" result="Success" success="True" time="0.3937" asserts="0" description="function 'Get-DfsNetInfo.ps1'">
             <results>
-              <test-suite type="ParameterizedTest" name="function 'Get-DfsNetInfo.ps1'.can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.2175" asserts="0" description="can be tokenized by the PowerShell parser without any errors">
+              <test-suite type="ParameterizedTest" name="function 'Get-DfsNetInfo.ps1'.can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.2208" asserts="0" description="can be tokenized by the PowerShell parser without any errors">
                 <results>
-                  <test-case description="can be tokenized by the PowerShell parser without any errors" name="function 'Get-DfsNetInfo.ps1'.can be tokenized by the PowerShell parser without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\src\functions\public\Get-DfsNetInfo.ps1&quot;)" time="0.2175" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="can be tokenized by the PowerShell parser without any errors" name="function 'Get-DfsNetInfo.ps1'.can be tokenized by the PowerShell parser without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\src\functions\public\Get-DfsNetInfo.ps1&quot;)" time="0.2208" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="ParameterizedTest" name="function 'Get-DfsNetInfo.ps1'.runs without throwing errors" executed="True" result="Success" success="True" time="0.0535" asserts="0" description="runs without throwing errors">
+              <test-suite type="ParameterizedTest" name="function 'Get-DfsNetInfo.ps1'.runs without throwing errors" executed="True" result="Success" success="True" time="0.0544" asserts="0" description="runs without throwing errors">
                 <results>
-                  <test-case description="runs without throwing errors" name="function 'Get-DfsNetInfo.ps1'.runs without throwing errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\src\functions\public\Get-DfsNetInfo.ps1&quot;)" time="0.0535" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="runs without throwing errors" name="function 'Get-DfsNetInfo.ps1'.runs without throwing errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\src\functions\public\Get-DfsNetInfo.ps1&quot;)" time="0.0544" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="function 'Get-FileShareInfo.ps1'" executed="True" result="Success" success="True" time="0.4069" asserts="0" description="function 'Get-FileShareInfo.ps1'">
+          <test-suite type="TestFixture" name="function 'Get-FileShareInfo.ps1'" executed="True" result="Success" success="True" time="0.43" asserts="0" description="function 'Get-FileShareInfo.ps1'">
             <results>
-              <test-suite type="ParameterizedTest" name="function 'Get-FileShareInfo.ps1'.can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.006" asserts="0" description="can be tokenized by the PowerShell parser without any errors">
+              <test-suite type="ParameterizedTest" name="function 'Get-FileShareInfo.ps1'.can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.0084" asserts="0" description="can be tokenized by the PowerShell parser without any errors">
                 <results>
-                  <test-case description="can be tokenized by the PowerShell parser without any errors" name="function 'Get-FileShareInfo.ps1'.can be tokenized by the PowerShell parser without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\src\functions\public\Get-FileShareInfo.ps1&quot;)" time="0.006" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="can be tokenized by the PowerShell parser without any errors" name="function 'Get-FileShareInfo.ps1'.can be tokenized by the PowerShell parser without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\src\functions\public\Get-FileShareInfo.ps1&quot;)" time="0.0084" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="ParameterizedTest" name="function 'Get-FileShareInfo.ps1'.runs without throwing errors" executed="True" result="Success" success="True" time="0.0186" asserts="0" description="runs without throwing errors">
+              <test-suite type="ParameterizedTest" name="function 'Get-FileShareInfo.ps1'.runs without throwing errors" executed="True" result="Success" success="True" time="0.0245" asserts="0" description="runs without throwing errors">
                 <results>
-                  <test-case description="runs without throwing errors" name="function 'Get-FileShareInfo.ps1'.runs without throwing errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\src\functions\public\Get-FileShareInfo.ps1&quot;)" time="0.0186" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="runs without throwing errors" name="function 'Get-FileShareInfo.ps1'.runs without throwing errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\src\functions\public\Get-FileShareInfo.ps1&quot;)" time="0.0245" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="function 'Get-NetDfsEnum.ps1'" executed="True" result="Success" success="True" time="0.443" asserts="0" description="function 'Get-NetDfsEnum.ps1'">
+          <test-suite type="TestFixture" name="function 'Get-NetDfsEnum.ps1'" executed="True" result="Success" success="True" time="0.4697" asserts="0" description="function 'Get-NetDfsEnum.ps1'">
             <results>
-              <test-suite type="ParameterizedTest" name="function 'Get-NetDfsEnum.ps1'.can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.008" asserts="0" description="can be tokenized by the PowerShell parser without any errors">
+              <test-suite type="ParameterizedTest" name="function 'Get-NetDfsEnum.ps1'.can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.009" asserts="0" description="can be tokenized by the PowerShell parser without any errors">
                 <results>
-                  <test-case description="can be tokenized by the PowerShell parser without any errors" name="function 'Get-NetDfsEnum.ps1'.can be tokenized by the PowerShell parser without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\src\functions\public\Get-NetDfsEnum.ps1&quot;)" time="0.008" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="can be tokenized by the PowerShell parser without any errors" name="function 'Get-NetDfsEnum.ps1'.can be tokenized by the PowerShell parser without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\src\functions\public\Get-NetDfsEnum.ps1&quot;)" time="0.009" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="ParameterizedTest" name="function 'Get-NetDfsEnum.ps1'.runs without throwing errors" executed="True" result="Success" success="True" time="0.0225" asserts="0" description="runs without throwing errors">
+              <test-suite type="ParameterizedTest" name="function 'Get-NetDfsEnum.ps1'.runs without throwing errors" executed="True" result="Success" success="True" time="0.0255" asserts="0" description="runs without throwing errors">
                 <results>
-                  <test-case description="runs without throwing errors" name="function 'Get-NetDfsEnum.ps1'.runs without throwing errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\src\functions\public\Get-NetDfsEnum.ps1&quot;)" time="0.0225" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="runs without throwing errors" name="function 'Get-NetDfsEnum.ps1'.runs without throwing errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\src\functions\public\Get-NetDfsEnum.ps1&quot;)" time="0.0255" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Help.tests.ps1" executed="True" result="Failure" success="False" time="1.136" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Help.tests.ps1">
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Help.tests.ps1" executed="True" result="Failure" success="False" time="1.0109" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Help.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="help for Get-DfsNetInfo" executed="True" result="Failure" success="False" time="0.4477" asserts="0" description="help for Get-DfsNetInfo">
+          <test-suite type="TestFixture" name="help for Get-DfsNetInfo" executed="True" result="Failure" success="False" time="0.4558" asserts="0" description="help for Get-DfsNetInfo">
             <results>
-              <test-suite type="TestFixture" name="help for Get-DfsNetInfo.- Help for parameter 'Credentials'" executed="True" result="Failure" success="False" time="0.3294" asserts="0" description="help for Get-DfsNetInfo.- Help for parameter 'Credentials'">
+              <test-suite type="TestFixture" name="help for Get-DfsNetInfo.- Help for parameter 'Credentials'" executed="True" result="Failure" success="False" time="0.3573" asserts="0" description="help for Get-DfsNetInfo.- Help for parameter 'Credentials'">
                 <results>
-                  <test-case description="has a description" name="help for Get-DfsNetInfo.- Help for parameter 'Credentials'.has a description" time="0.0347" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for Get-DfsNetInfo.- Help for parameter 'Credentials'.has the correct [mandatory] value" time="0.0297" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for Get-DfsNetInfo.- Help for parameter 'Credentials'.has the correct parameter type" time="0.1183" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for Get-DfsNetInfo.- Help for parameter 'Credentials'.has a description" time="0.0245" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct [mandatory] value" name="help for Get-DfsNetInfo.- Help for parameter 'Credentials'.has the correct [mandatory] value" time="0.0295" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for Get-DfsNetInfo.- Help for parameter 'Credentials'.has the correct parameter type" time="0.1632" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
                       <message>Expected strings to be the same, but they were different.
 Expected length: 12
@@ -73,11 +73,11 @@ at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerSh
                   </test-case>
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for Get-DfsNetInfo.- Help for parameter 'FolderPath'" executed="True" result="Failure" success="False" time="0.3578" asserts="0" description="help for Get-DfsNetInfo.- Help for parameter 'FolderPath'">
+              <test-suite type="TestFixture" name="help for Get-DfsNetInfo.- Help for parameter 'FolderPath'" executed="True" result="Failure" success="False" time="0.3831" asserts="0" description="help for Get-DfsNetInfo.- Help for parameter 'FolderPath'">
                 <results>
-                  <test-case description="has a description" name="help for Get-DfsNetInfo.- Help for parameter 'FolderPath'.has a description" time="0.0046" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for Get-DfsNetInfo.- Help for parameter 'FolderPath'.has the correct [mandatory] value" time="0.006" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for Get-DfsNetInfo.- Help for parameter 'FolderPath'.has the correct parameter type" time="0.0127" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for Get-DfsNetInfo.- Help for parameter 'FolderPath'.has a description" time="0.0042" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct [mandatory] value" name="help for Get-DfsNetInfo.- Help for parameter 'FolderPath'.has the correct [mandatory] value" time="0.0044" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for Get-DfsNetInfo.- Help for parameter 'FolderPath'.has the correct parameter type" time="0.0117" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
                       <message>Expected strings to be the same, but they were different.
 Expected length: 8
@@ -92,11 +92,11 @@ at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerSh
                   </test-case>
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for Get-DfsNetInfo.- Help for parameter 'ProgressAction'" executed="True" result="Failure" success="False" time="0.4039" asserts="0" description="help for Get-DfsNetInfo.- Help for parameter 'ProgressAction'">
+              <test-suite type="TestFixture" name="help for Get-DfsNetInfo.- Help for parameter 'ProgressAction'" executed="True" result="Failure" success="False" time="0.4195" asserts="0" description="help for Get-DfsNetInfo.- Help for parameter 'ProgressAction'">
                 <results>
-                  <test-case description="has a description" name="help for Get-DfsNetInfo.- Help for parameter 'ProgressAction'.has a description" time="0.0065" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for Get-DfsNetInfo.- Help for parameter 'ProgressAction'.has the correct [mandatory] value" time="0.0148" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for Get-DfsNetInfo.- Help for parameter 'ProgressAction'.has the correct parameter type" time="0.0175" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for Get-DfsNetInfo.- Help for parameter 'ProgressAction'.has a description" time="0.0064" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct [mandatory] value" name="help for Get-DfsNetInfo.- Help for parameter 'ProgressAction'.has the correct [mandatory] value" time="0.0036" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for Get-DfsNetInfo.- Help for parameter 'ProgressAction'.has the correct parameter type" time="0.0129" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
                       <message>Expected strings to be the same, but they were different.
 Expected length: 16
@@ -111,19 +111,19 @@ at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerSh
                   </test-case>
                 </results>
               </test-suite>
-              <test-case description="is not auto-generated" name="help for Get-DfsNetInfo.is not auto-generated" time="0.0179" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has a description" name="help for Get-DfsNetInfo.has a description" time="0.0146" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has example code" name="help for Get-DfsNetInfo.has example code" time="0.0319" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has example help" name="help for Get-DfsNetInfo.has example help" time="0.0363" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="is not auto-generated" name="help for Get-DfsNetInfo.is not auto-generated" time="0.0242" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has a description" name="help for Get-DfsNetInfo.has a description" time="0.0245" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has example code" name="help for Get-DfsNetInfo.has example code" time="0.022" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has example help" name="help for Get-DfsNetInfo.has example help" time="0.0281" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="help for Get-FileShareInfo" executed="True" result="Failure" success="False" time="0.6266" asserts="0" description="help for Get-FileShareInfo">
+          <test-suite type="TestFixture" name="help for Get-FileShareInfo" executed="True" result="Failure" success="False" time="0.5738" asserts="0" description="help for Get-FileShareInfo">
             <results>
-              <test-suite type="TestFixture" name="help for Get-FileShareInfo.- Help for parameter 'ProgressAction'" executed="True" result="Failure" success="False" time="0.1155" asserts="0" description="help for Get-FileShareInfo.- Help for parameter 'ProgressAction'">
+              <test-suite type="TestFixture" name="help for Get-FileShareInfo.- Help for parameter 'ProgressAction'" executed="True" result="Failure" success="False" time="0.0556" asserts="0" description="help for Get-FileShareInfo.- Help for parameter 'ProgressAction'">
                 <results>
-                  <test-case description="has a description" name="help for Get-FileShareInfo.- Help for parameter 'ProgressAction'.has a description" time="0.0123" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for Get-FileShareInfo.- Help for parameter 'ProgressAction'.has the correct [mandatory] value" time="0.0141" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for Get-FileShareInfo.- Help for parameter 'ProgressAction'.has the correct parameter type" time="0.0222" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for Get-FileShareInfo.- Help for parameter 'ProgressAction'.has a description" time="0.0056" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct [mandatory] value" name="help for Get-FileShareInfo.- Help for parameter 'ProgressAction'.has the correct [mandatory] value" time="0.0059" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for Get-FileShareInfo.- Help for parameter 'ProgressAction'.has the correct parameter type" time="0.012" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
                       <message>Expected strings to be the same, but they were different.
 Expected length: 16
@@ -138,11 +138,11 @@ at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerSh
                   </test-case>
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for Get-FileShareInfo.- Help for parameter 'ServerAndShare'" executed="True" result="Failure" success="False" time="0.1619" asserts="0" description="help for Get-FileShareInfo.- Help for parameter 'ServerAndShare'">
+              <test-suite type="TestFixture" name="help for Get-FileShareInfo.- Help for parameter 'ServerAndShare'" executed="True" result="Failure" success="False" time="0.1051" asserts="0" description="help for Get-FileShareInfo.- Help for parameter 'ServerAndShare'">
                 <results>
-                  <test-case description="has a description" name="help for Get-FileShareInfo.- Help for parameter 'ServerAndShare'.has a description" time="0.0082" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for Get-FileShareInfo.- Help for parameter 'ServerAndShare'.has the correct [mandatory] value" time="0.0097" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for Get-FileShareInfo.- Help for parameter 'ServerAndShare'.has the correct parameter type" time="0.0227" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for Get-FileShareInfo.- Help for parameter 'ServerAndShare'.has a description" time="0.007" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct [mandatory] value" name="help for Get-FileShareInfo.- Help for parameter 'ServerAndShare'.has the correct [mandatory] value" time="0.0253" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for Get-FileShareInfo.- Help for parameter 'ServerAndShare'.has the correct parameter type" time="0.0115" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
                       <message>Expected strings to be the same, but they were different.
 Expected length: 10
@@ -157,19 +157,19 @@ at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerSh
                   </test-case>
                 </results>
               </test-suite>
-              <test-case description="is not auto-generated" name="help for Get-FileShareInfo.is not auto-generated" time="0.0108" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has a description" name="help for Get-FileShareInfo.has a description" time="0.0099" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has example code" name="help for Get-FileShareInfo.has example code" time="0.0075" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has example help" name="help for Get-FileShareInfo.has example help" time="0.0283" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="is not auto-generated" name="help for Get-FileShareInfo.is not auto-generated" time="0.0057" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has a description" name="help for Get-FileShareInfo.has a description" time="0.0049" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has example code" name="help for Get-FileShareInfo.has example code" time="0.0104" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has example help" name="help for Get-FileShareInfo.has example help" time="0.0044" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="help for Get-NetDfsEnum" executed="True" result="Failure" success="False" time="0.9095" asserts="0" description="help for Get-NetDfsEnum">
+          <test-suite type="TestFixture" name="help for Get-NetDfsEnum" executed="True" result="Failure" success="False" time="0.7757" asserts="0" description="help for Get-NetDfsEnum">
             <results>
-              <test-suite type="TestFixture" name="help for Get-NetDfsEnum.- Help for parameter 'Credentials'" executed="True" result="Failure" success="False" time="0.1623" asserts="0" description="help for Get-NetDfsEnum.- Help for parameter 'Credentials'">
+              <test-suite type="TestFixture" name="help for Get-NetDfsEnum.- Help for parameter 'Credentials'" executed="True" result="Failure" success="False" time="0.107" asserts="0" description="help for Get-NetDfsEnum.- Help for parameter 'Credentials'">
                 <results>
-                  <test-case description="has a description" name="help for Get-NetDfsEnum.- Help for parameter 'Credentials'.has a description" time="0.0158" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for Get-NetDfsEnum.- Help for parameter 'Credentials'.has the correct [mandatory] value" time="0.0115" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for Get-NetDfsEnum.- Help for parameter 'Credentials'.has the correct parameter type" time="0.0173" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for Get-NetDfsEnum.- Help for parameter 'Credentials'.has a description" time="0.0066" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct [mandatory] value" name="help for Get-NetDfsEnum.- Help for parameter 'Credentials'.has the correct [mandatory] value" time="0.0068" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for Get-NetDfsEnum.- Help for parameter 'Credentials'.has the correct parameter type" time="0.0127" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
                       <message>Expected strings to be the same, but they were different.
 Expected length: 12
@@ -184,11 +184,11 @@ at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerSh
                   </test-case>
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for Get-NetDfsEnum.- Help for parameter 'FolderPath'" executed="True" result="Failure" success="False" time="0.2131" asserts="0" description="help for Get-NetDfsEnum.- Help for parameter 'FolderPath'">
+              <test-suite type="TestFixture" name="help for Get-NetDfsEnum.- Help for parameter 'FolderPath'" executed="True" result="Failure" success="False" time="0.1459" asserts="0" description="help for Get-NetDfsEnum.- Help for parameter 'FolderPath'">
                 <results>
-                  <test-case description="has a description" name="help for Get-NetDfsEnum.- Help for parameter 'FolderPath'.has a description" time="0.0102" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for Get-NetDfsEnum.- Help for parameter 'FolderPath'.has the correct [mandatory] value" time="0.0058" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for Get-NetDfsEnum.- Help for parameter 'FolderPath'.has the correct parameter type" time="0.026" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for Get-NetDfsEnum.- Help for parameter 'FolderPath'.has a description" time="0.0062" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct [mandatory] value" name="help for Get-NetDfsEnum.- Help for parameter 'FolderPath'.has the correct [mandatory] value" time="0.0054" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for Get-NetDfsEnum.- Help for parameter 'FolderPath'.has the correct parameter type" time="0.0222" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
                       <message>Expected strings to be the same, but they were different.
 Expected length: 8
@@ -203,11 +203,11 @@ at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerSh
                   </test-case>
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="help for Get-NetDfsEnum.- Help for parameter 'ProgressAction'" executed="True" result="Failure" success="False" time="0.2642" asserts="0" description="help for Get-NetDfsEnum.- Help for parameter 'ProgressAction'">
+              <test-suite type="TestFixture" name="help for Get-NetDfsEnum.- Help for parameter 'ProgressAction'" executed="True" result="Failure" success="False" time="0.1853" asserts="0" description="help for Get-NetDfsEnum.- Help for parameter 'ProgressAction'">
                 <results>
-                  <test-case description="has a description" name="help for Get-NetDfsEnum.- Help for parameter 'ProgressAction'.has a description" time="0.0118" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct [mandatory] value" name="help for Get-NetDfsEnum.- Help for parameter 'ProgressAction'.has the correct [mandatory] value" time="0.004" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the correct parameter type" name="help for Get-NetDfsEnum.- Help for parameter 'ProgressAction'.has the correct parameter type" time="0.0286" asserts="0" success="False" result="Failure" executed="True">
+                  <test-case description="has a description" name="help for Get-NetDfsEnum.- Help for parameter 'ProgressAction'.has a description" time="0.0063" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct [mandatory] value" name="help for Get-NetDfsEnum.- Help for parameter 'ProgressAction'.has the correct [mandatory] value" time="0.0074" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the correct parameter type" name="help for Get-NetDfsEnum.- Help for parameter 'ProgressAction'.has the correct parameter type" time="0.0195" asserts="0" success="False" result="Failure" executed="True">
                     <failure>
                       <message>Expected strings to be the same, but they were different.
 Expected length: 16
@@ -222,93 +222,93 @@ at &lt;ScriptBlock&gt;, E:\Owner\Documents\Google Drive\Programs\Scripts\PowerSh
                   </test-case>
                 </results>
               </test-suite>
-              <test-case description="is not auto-generated" name="help for Get-NetDfsEnum.is not auto-generated" time="0.0105" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has a description" name="help for Get-NetDfsEnum.has a description" time="0.0044" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has example code" name="help for Get-NetDfsEnum.has example code" time="0.007" asserts="0" success="True" result="Success" executed="True" />
-              <test-case description="has example help" name="help for Get-NetDfsEnum.has example help" time="0.0869" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="is not auto-generated" name="help for Get-NetDfsEnum.is not auto-generated" time="0.0043" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has a description" name="help for Get-NetDfsEnum.has a description" time="0.0027" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has example code" name="help for Get-NetDfsEnum.has example code" time="0.0082" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="has example help" name="help for Get-NetDfsEnum.has example help" time="0.0562" asserts="0" success="True" result="Success" executed="True" />
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Manifest.tests.ps1" executed="True" result="Ignored" success="True" time="2.1586" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Manifest.tests.ps1">
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Manifest.tests.ps1" executed="True" result="Ignored" success="True" time="0.5533" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Manifest.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="module manifest 'PsDfs.psd1'" executed="True" result="Success" success="True" time="0.3995" asserts="0" description="module manifest 'PsDfs.psd1'">
+          <test-suite type="TestFixture" name="module manifest 'PsDfs.psd1'" executed="True" result="Success" success="True" time="0.1815" asserts="0" description="module manifest 'PsDfs.psd1'">
             <results>
-              <test-suite type="TestFixture" name="module manifest 'PsDfs.psd1'.- Validation" executed="True" result="Success" success="True" time="0.3779" asserts="0" description="module manifest 'PsDfs.psd1'.- Validation">
+              <test-suite type="TestFixture" name="module manifest 'PsDfs.psd1'.- Validation" executed="True" result="Success" success="True" time="0.1721" asserts="0" description="module manifest 'PsDfs.psd1'.- Validation">
                 <results>
-                  <test-case description="is a valid manifest" name="module manifest 'PsDfs.psd1'.- Validation.is a valid manifest" time="0.0312" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has a valid name in the manifest" name="module manifest 'PsDfs.psd1'.- Validation.has a valid name in the manifest" time="0.0319" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has a valid root module" name="module manifest 'PsDfs.psd1'.- Validation.has a valid root module" time="0.035" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has a valid version" name="module manifest 'PsDfs.psd1'.- Validation.has a valid version" time="0.0404" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has a valid description" name="module manifest 'PsDfs.psd1'.- Validation.has a valid description" time="0.0372" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has a valid author" name="module manifest 'PsDfs.psd1'.- Validation.has a valid author" time="0.0394" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has a valid guid" name="module manifest 'PsDfs.psd1'.- Validation.has a valid guid" time="0.0833" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has a valid copyright" name="module manifest 'PsDfs.psd1'.- Validation.has a valid copyright" time="0.0658" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="is a valid manifest" name="module manifest 'PsDfs.psd1'.- Validation.is a valid manifest" time="0.0192" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid name in the manifest" name="module manifest 'PsDfs.psd1'.- Validation.has a valid name in the manifest" time="0.0241" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid root module" name="module manifest 'PsDfs.psd1'.- Validation.has a valid root module" time="0.0239" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid version" name="module manifest 'PsDfs.psd1'.- Validation.has a valid version" time="0.023" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid description" name="module manifest 'PsDfs.psd1'.- Validation.has a valid description" time="0.0068" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid author" name="module manifest 'PsDfs.psd1'.- Validation.has a valid author" time="0.0148" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid guid" name="module manifest 'PsDfs.psd1'.- Validation.has a valid guid" time="0.0381" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has a valid copyright" name="module manifest 'PsDfs.psd1'.- Validation.has a valid copyright" time="0.0165" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Git tagging" executed="True" result="Ignored" success="True" time="0.5191" asserts="0" description="Git tagging">
+          <test-suite type="TestFixture" name="Git tagging" executed="True" result="Ignored" success="True" time="0.1989" asserts="0" description="Git tagging">
             <results>
-              <test-suite type="TestFixture" name="Git tagging.- Git tag version ''" executed="True" result="Ignored" success="True" time="0.109" asserts="0" description="Git tagging.- Git tag version ''">
+              <test-suite type="TestFixture" name="Git tagging.- Git tag version ''" executed="True" result="Ignored" success="True" time="0.0139" asserts="0" description="Git tagging.- Git tag version ''">
                 <results>
-                  <test-case description="is a valid version" name="Git tagging.- Git tag version ''.is a valid version" time="0.062" asserts="0" success="False" result="Ignored" executed="False" />
-                  <test-case description="matches the module manifest version" name="Git tagging.- Git tag version ''.matches the module manifest version" time="0.0254" asserts="0" success="False" result="Ignored" executed="False" />
-                </results>
-              </test-suite>
-            </results>
-          </test-suite>
-        </results>
-      </test-suite>
-      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Metadata.tests.ps1" executed="True" result="Success" success="True" time="0.4917" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Metadata.tests.ps1">
-        <results>
-          <test-suite type="TestFixture" name="text files" executed="True" result="Success" success="True" time="0.0681" asserts="0" description="text files">
-            <results>
-              <test-suite type="TestFixture" name="text files.- File Encoding" executed="True" result="Success" success="True" time="0.0248" asserts="0" description="text files.- File Encoding">
-                <results>
-                  <test-case description="do not use Unicode/UTF-16 encoding" name="text files.- File Encoding.do not use Unicode/UTF-16 encoding" time="0.0191" asserts="0" success="True" result="Success" executed="True" />
-                </results>
-              </test-suite>
-              <test-suite type="TestFixture" name="text files.- Indentations" executed="True" result="Success" success="True" time="0.0623" asserts="0" description="text files.- Indentations">
-                <results>
-                  <test-case description="do not use tabs for indentations" name="text files.- Indentations.do not use tabs for indentations" time="0.03" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="is a valid version" name="Git tagging.- Git tag version ''.is a valid version" time="0.0071" asserts="0" success="False" result="Ignored" executed="False" />
+                  <test-case description="matches the module manifest version" name="Git tagging.- Git tag version ''.matches the module manifest version" time="0.0029" asserts="0" success="False" result="Ignored" executed="False" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Module.tests.ps1" executed="True" result="Success" success="True" time="0.3432" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Module.tests.ps1">
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Metadata.tests.ps1" executed="True" result="Success" success="True" time="0.2744" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Metadata.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="PowerShell files in module 'PsDfs'" executed="True" result="Success" success="True" time="0.1132" asserts="0" description="PowerShell files in module 'PsDfs'">
+          <test-suite type="TestFixture" name="text files" executed="True" result="Success" success="True" time="0.049" asserts="0" description="text files">
             <results>
-              <test-suite type="ParameterizedTest" name="PowerShell files in module 'PsDfs'.'&lt;Script&gt;' can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.1061" asserts="0" description="'&lt;Script&gt;' can be tokenized by the PowerShell parser without any errors">
+              <test-suite type="TestFixture" name="text files.- File Encoding" executed="True" result="Success" success="True" time="0.0196" asserts="0" description="text files.- File Encoding">
                 <results>
-                  <test-case description="'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\dist\1.0.16\PsDfs\PsDfs.psd1' can be tokenized by the PowerShell parser without any errors" name="PowerShell files in module 'PsDfs'.'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\dist\1.0.16\PsDfs\PsDfs.psd1' can be tokenized by the PowerShell parser without any errors" time="0.0958" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\dist\1.0.16\PsDfs\PsDfs.psm1' can be tokenized by the PowerShell parser without any errors" name="PowerShell files in module 'PsDfs'.'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\dist\1.0.16\PsDfs\PsDfs.psm1' can be tokenized by the PowerShell parser without any errors" time="0.0103" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="do not use Unicode/UTF-16 encoding" name="text files.- File Encoding.do not use Unicode/UTF-16 encoding" time="0.017" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-            </results>
-          </test-suite>
-          <test-suite type="TestFixture" name="module 'PsDfs'" executed="True" result="Success" success="True" time="0.1769" asserts="0" description="module 'PsDfs'">
-            <results>
-              <test-suite type="ParameterizedTest" name="module 'PsDfs'.can be imported without any errors" executed="True" result="Success" success="True" time="0.0531" asserts="0" description="can be imported without any errors">
+              <test-suite type="TestFixture" name="text files.- Indentations" executed="True" result="Success" success="True" time="0.0453" asserts="0" description="text files.- Indentations">
                 <results>
-                  <test-case description="can be imported without any errors" name="module 'PsDfs'.can be imported without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\dist\1.0.16\PsDfs\PsDfs.psm1&quot;)" time="0.0531" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="do not use tabs for indentations" name="text files.- Indentations.do not use tabs for indentations" time="0.0214" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Project.tests.ps1" executed="True" result="Success" success="True" time="0.3205" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Project.tests.ps1">
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Module.tests.ps1" executed="True" result="Success" success="True" time="0.2156" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Module.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="change log" executed="True" result="Success" success="True" time="0.0672" asserts="0" description="change log">
+          <test-suite type="TestFixture" name="PowerShell files in module 'PsDfs'" executed="True" result="Success" success="True" time="0.0577" asserts="0" description="PowerShell files in module 'PsDfs'">
             <results>
-              <test-suite type="TestFixture" name="change log.- Version" executed="True" result="Success" success="True" time="0.0641" asserts="0" description="change log.- Version">
+              <test-suite type="ParameterizedTest" name="PowerShell files in module 'PsDfs'.'&lt;Script&gt;' can be tokenized by the PowerShell parser without any errors" executed="True" result="Success" success="True" time="0.0496" asserts="0" description="'&lt;Script&gt;' can be tokenized by the PowerShell parser without any errors">
                 <results>
-                  <test-case description="has a valid version" name="change log.- Version.has a valid version" time="0.0259" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="has the same version as the manifest" name="change log.- Version.has the same version as the manifest" time="0.0296" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\dist\1.0.17\PsDfs\PsDfs.psd1' can be tokenized by the PowerShell parser without any errors" name="PowerShell files in module 'PsDfs'.'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\dist\1.0.17\PsDfs\PsDfs.psd1' can be tokenized by the PowerShell parser without any errors" time="0.043" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\dist\1.0.17\PsDfs\PsDfs.psm1' can be tokenized by the PowerShell parser without any errors" name="PowerShell files in module 'PsDfs'.'E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\dist\1.0.17\PsDfs\PsDfs.psm1' can be tokenized by the PowerShell parser without any errors" time="0.0066" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="module 'PsDfs'" executed="True" result="Success" success="True" time="0.0989" asserts="0" description="module 'PsDfs'">
+            <results>
+              <test-suite type="ParameterizedTest" name="module 'PsDfs'.can be imported without any errors" executed="True" result="Success" success="True" time="0.0378" asserts="0" description="can be imported without any errors">
+                <results>
+                  <test-case description="can be imported without any errors" name="module 'PsDfs'.can be imported without any errors(&quot;E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\dist\1.0.17\PsDfs\PsDfs.psm1&quot;)" time="0.0378" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Project.tests.ps1" executed="True" result="Success" success="True" time="0.2605" asserts="0" description="E:\Owner\Documents\Google Drive\Programs\Scripts\PowerShell\PsDfs\tests\Project.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="change log" executed="True" result="Success" success="True" time="0.0426" asserts="0" description="change log">
+            <results>
+              <test-suite type="TestFixture" name="change log.- Version" executed="True" result="Success" success="True" time="0.0396" asserts="0" description="change log.- Version">
+                <results>
+                  <test-case description="has a valid version" name="change log.- Version.has a valid version" time="0.017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="has the same version as the manifest" name="change log.- Version.has the same version as the manifest" time="0.0182" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>

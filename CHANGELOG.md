@@ -5,6 +5,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.17] - 2024-04-07 - bugfix when type already loaded
+
 ## [1.0.16] - 2024-01-15 - Updated comments in Get-NetDfsEnum
 
 ## [1.0.15] - 2024-01-15 - Updated comments in Get-NetDfsEnum

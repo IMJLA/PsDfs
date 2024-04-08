@@ -121,6 +121,12 @@ Function Get-NetDfsEnum {
 
 }
 
+if ([type]'NetApi32Dll') {
+
+Write-Verbose 'TYPE_ALREADY_EXISTS NetApi32Dll.  It is possible that the most recent version is not loaded.  Restart PowerShell to be certain.'
+
+} else {
+
 Add-Type -ErrorAction Stop -TypeDefinition @"
 
 
@@ -454,7 +460,10 @@ public class NetApi32Dll
 
 "@
 
+}
+
 Export-ModuleMember -Function @('Get-DfsNetInfo','Get-FileShareInfo','Get-NetDfsEnum')
+
 
 
 

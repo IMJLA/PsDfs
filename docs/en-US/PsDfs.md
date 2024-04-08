@@ -2,7 +2,7 @@
 Module Name: PsDfs
 Module Guid: 7fbe3cd1-63ca-4ba1-8f87-cc3f3daf64c8
 Download Help Link: {{ Update Download Link }}
-Help Version: 1.0.16
+Help Version: 1.0.17
 Locale: en-US
 ---
 

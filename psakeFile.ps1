@@ -273,11 +273,16 @@ task CSharp -depends BuildModule {
 
     # Add the code to load any C# classes from files in the module
     $CSharpFiles = Get-ChildItem -LiteralPath .\src -Include *.cs -Recurse
+
+
     ForEach ($ThisFile in $CSharpFiles) {
+        $null = $CSharpContent.Add("if ([type]'$($ThisFile.Name.Split('.')[0])') {")
+        $null = $CSharpContent.Add("Write-Verbose 'TYPE_ALREADY_EXISTS $($ThisFile.Name.Split('.')[0]).  It is possible that the most recent version is not loaded.  Restart PowerShell to be certain.'")
+        $null = $CSharpContent.Add('} else {')
         $null = $CSharpContent.Add('Add-Type -ErrorAction Stop -TypeDefinition @"')
         $null = $CSharpContent.Add(($ThisFile | Get-Content -Raw))
         $null = $CSharpContent.Add('"@')
-
+        $null = $CSharpContent.Add('}')
     }
     $Result = $CSharpContent -join "`r`n`r`n"
     # Remove the 5 lines in the module source code that load C# classes from their files (we have already added the necessary code up above)
